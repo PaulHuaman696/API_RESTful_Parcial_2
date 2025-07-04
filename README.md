@@ -1,44 +1,73 @@
-📘 Manual de Usuario – Sistema de Gestión Académica
-Bienvenido al sistema de gestión de cursos y docentes del Instituto San Juan. Este proyecto está dividido en dos partes:
-    🔙 Backend (API): Lógica y conexión con base de datos (Node.js + MongoDB).
-    🖥️ Frontend: Interfaz web para el usuario (HTML, CSS, JS).
+# 📘 Manual de Usuario – Sistema de Gestión Académica
 
-✅ Requisitos Previos
-Antes de empezar, asegúrese de tener instalado:
-    - Node.js (incluye npm)
+Bienvenido al **Sistema de Gestión Académica** del Instituto San Juan. Este proyecto permite gestionar cursos y docentes a través de una interfaz web conectada a una API backend.
 
-Verificar instalación:
-    node -v
-    npm -v
+El sistema está compuesto por dos partes principales:
 
-    Nota: Si no están instalados, descárguelos desde: https://nodejs.org/es (recomendada: versión LTS)
+- 🔙 **Backend (API):** Lógica y conexión a base de datos – *Node.js + MongoDB*
+- 🖥️ **Frontend:** Interfaz de usuario – *HTML, CSS, JavaScript*
+
+---
+
+## ✅ Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instalado:
+
+- [Node.js](https://nodejs.org/es) (incluye npm)  
+  > Recomendado: versión LTS
+
+Puedes verificar la instalación ejecutando en la terminal:
+
+```bash
+node -v
+npm -v
 
 ⚙️ Paso 1: Configurar y Levantar el Backend (API)
-    1. Abrir terminal y navegar al proyecto:
-        cd ruta/al/backend
+Abre la terminal y navega a la carpeta del backend:
 
-    2. Configurar conexión a la base de datos
-        Asegúrese de tener un archivo .env con esta línea:
-            MONGODB_URI=mongodb+srv://<usuario>:<contraseña>@cluster.mongodb.net/institutoDB
+bash
+Copiar
+Editar
+cd ruta/al/backend
+Crea un archivo .env con tu conexión a MongoDB:
 
-    3. Instalar las dependencias
-        npm install
+env
+Copiar
+Editar
+MONGODB_URI=mongodb+srv://<usuario>:<contraseña>@cluster.mongodb.net/institutoDB
+Instala las dependencias:
 
-    4. Levantar el servidor
-        npm run dev
+bash
+Copiar
+Editar
+npm install
+Inicia el servidor en modo desarrollo:
 
-        Verás mensajes como:
-            Servidor funcionando en el puerto 4000
-            MongoDB conectado
+bash
+Copiar
+Editar
+npm run dev
+Si todo está correcto, verás mensajes como:
 
-🚀 Paso 2: Ejecutar el Frontend (La Página Web)
-    Ir a la carpeta frontend.
-    Hacer doble clic en index.html para abrir la página en su navegador.
+yaml
+Copiar
+Editar
+Servidor funcionando en el puerto 4000
+MongoDB conectado
+🚀 Paso 2: Ejecutar el Frontend (Página Web)
+Dirígete a la carpeta frontend.
 
-🧪 ¡Listo!
-Ya puedes:
-    - Agregar docentes
-    - Crear cursos
-    - Visualizar la información en tiempo real
+Haz doble clic en index.html para abrir la página en tu navegador.
 
-La web se comunica directamente con el servidor que dejaste corriendo. Asegúrate de mantener la terminal abierta mientras lo usas.
+⚠️ Asegúrate de que el backend siga corriendo en segundo plano.
+
+🧪 ¡Todo Listo!
+Ahora puedes:
+
+➕ Agregar docentes
+
+📚 Crear cursos
+
+👀 Visualizar la información en tiempo real
+
+La página web se comunica directamente con el servidor API que configuraste en el paso anterior.
