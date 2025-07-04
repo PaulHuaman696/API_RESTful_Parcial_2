@@ -24,9 +24,9 @@ npm -v
 ```
 ⚙️ Paso 1: Configurar y Levantar el Backend (API)
     1. Abrir terminal y navegar al proyecto:
-        ```bash
+        
         cd ruta/al/backend
-        ```
+        
     2. Configurar conexión a la base de datos
         Asegúrese de tener un archivo .env con esta línea:
             MONGODB_URI=mongodb+srv://<usuario>:<contraseña>@cluster.mongodb.net/institutoDB

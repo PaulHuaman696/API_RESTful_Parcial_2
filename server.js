@@ -19,7 +19,10 @@ app.use(express.json()); // Habilitar lectura de JSON en el body
 // Rutas
 app.use('/api/cursos', cursoRoutes);
 app.use('/api/docentes', docenteRoutes);
-
+// Ruta de bienvenida
+app.get('/', (req, res) => {
+    res.send('¡API de Sistema de Gestión Académica funcionando!');
+});
 // Puerto
 const PORT = process.env.PORT || 4000;
 
