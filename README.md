@@ -23,51 +23,31 @@ node -v
 npm -v
 
 ⚙️ Paso 1: Configurar y Levantar el Backend (API)
-Abre la terminal y navega a la carpeta del backend:
+    1. Abrir terminal y navegar al proyecto:
+        cd ruta/al/backend
 
-bash
-Copiar
-Editar
-cd ruta/al/backend
-Crea un archivo .env con tu conexión a MongoDB:
+    2. Configurar conexión a la base de datos
+        Asegúrese de tener un archivo .env con esta línea:
+            MONGODB_URI=mongodb+srv://<usuario>:<contraseña>@cluster.mongodb.net/institutoDB
 
-env
-Copiar
-Editar
-MONGODB_URI=mongodb+srv://<usuario>:<contraseña>@cluster.mongodb.net/institutoDB
-Instala las dependencias:
+    3. Instalar las dependencias
+        npm install
 
-bash
-Copiar
-Editar
-npm install
-Inicia el servidor en modo desarrollo:
+    4. Levantar el servidor
+        npm run dev
 
-bash
-Copiar
-Editar
-npm run dev
-Si todo está correcto, verás mensajes como:
+        Verás mensajes como:
+            Servidor funcionando en el puerto 4000
+            MongoDB conectado
 
-yaml
-Copiar
-Editar
-Servidor funcionando en el puerto 4000
-MongoDB conectado
-🚀 Paso 2: Ejecutar el Frontend (Página Web)
-Dirígete a la carpeta frontend.
+🚀 Paso 2: Ejecutar el Frontend (La Página Web)
+    Ir a la carpeta frontend.
+    Hacer doble clic en index.html para abrir la página en su navegador.
 
-Haz doble clic en index.html para abrir la página en tu navegador.
+🧪 ¡Listo!
+Ya puedes:
+    - Agregar docentes
+    - Crear cursos
+    - Visualizar la información en tiempo real
 
-⚠️ Asegúrate de que el backend siga corriendo en segundo plano.
-
-🧪 ¡Todo Listo!
-Ahora puedes:
-
-➕ Agregar docentes
-
-📚 Crear cursos
-
-👀 Visualizar la información en tiempo real
-
-La página web se comunica directamente con el servidor API que configuraste en el paso anterior.
+La web se comunica directamente con el servidor que dejaste corriendo. Asegúrate de mantener la terminal abierta mientras lo usas.
