@@ -216,9 +216,6 @@
  *     Docente:
  *       type: object
  *       properties:
- *         _id:
- *           type: string
- *           example: 65f4c3a9a1d3e4f5a6b7c8d8
  *         nombres:
  *           type: string
  *           example: Ana
