@@ -22,7 +22,7 @@ app.use(express.json()); // Habilitar lectura de JSON en el body
 // Rutas
 app.use('/api/cursos', cursoRoutes);
 app.use('/api/docentes', docenteRoutes);
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/api-docs-swagger', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 // Ruta de bienvenida
 app.get('/', (req, res) => {
   res.send('¡API de Sistema de Gestión Académica funcionando!');
