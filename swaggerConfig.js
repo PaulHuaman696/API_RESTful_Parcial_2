@@ -1,6 +1,5 @@
 // swaggerConfig.js
 const swaggerJSDoc = require('swagger-jsdoc');
-
 const swaggerOptions = {
   definition: {
     openapi: '3.0.0',
@@ -11,7 +10,7 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: 'http://localhost:4000',
+        url: 'http://ec2-3-129-67-242.us-east-2.compute.amazonaws.com:4000/',
         description: 'Servidor de desarrollo'
       },
     ],
